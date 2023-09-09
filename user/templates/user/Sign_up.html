@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>註冊</title>
+        <link href="{% static 'user/signin.css' %}" rel="stylesheet">
+    </head>
+    
+    <body style="background: radial-gradient( #ffffff, #fff7f0); display: flex; justify-content: center; align-items: center;">
+        <main>
+            <form method="post" style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
+                {% csrf_token %}
+                <img src="{% static 'user/Images/orange.png' %}" width="72" height="72" style="margin-bottom: 15px;">
+                <div style="font-size: 34px;">註冊資料</div>
+                {% if message %}
+                    <div style="color:red; font-size: 15px;">{{message}}</div>
+                {% else %}
+                    <div style="color:red; font-size: 17px;">&ensp;</div>
+                {% endif %}
+                <div>
+                    <input type="text"  id="floatingInput" placeholder="帳號名稱" name="username"
+                    style="height: 50px; width: 250px; font-size: 18px;">
+                </div>
+
+                <div>
+                    <input type="email"  id="floatingInput" placeholder="電子郵件: user@example.com" name="email"
+                    style="height: 50px; width: 250px; font-size: 18px;">
+                </div>
+                
+                <div>
+                    <input type="password" id="floatingPassword" placeholder="密碼" name="password"
+                    style="height: 50px; width: 250px; font-size: 18px;">
+                </div>
+                
+                <div>
+                    <input type="password" id="floatingPassword" placeholder="再輸入一次" name="re_password"
+                    style="height: 50px; width: 250px; font-size: 18px;">
+                </div>
+
+                <button class="btn-2" type="submit" value="signin" style="margin-top: 15px;">註冊</button>
+                <div style="display: inline-block;list-style-type: none;align-items: center;">
+                    <a class="btn" href="{% url 'user:signin' %}">回登入</a>
+                    <a class="btn" href="{% url 'user:index' %}">回首頁</a>
+                </div>
+                <p>&copy; 2021–2022</p>
+            </form>
+        </main>    
+  </body>
+</html>

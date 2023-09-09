@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>登入</title>
+        <link href="{% static 'user/signin.css' %}" rel="stylesheet">
+    </head>
+    
+    <body style="background: radial-gradient( #ffffff, #fff7f0); display: flex; justify-content: center; align-items: center;">
+        <form method="post" style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
+            {% csrf_token %}
+            <img src="{% static 'user/Images/orange.png' %}" width="72" height="72" style="margin-bottom: 15px;">
+            <div style="font-size: 34px;">請登入</div>
+            {% if message %}
+                <div style="color:red; font-size: 15px;">{{message}}</div>
+            {% else %}
+                <div style="color:red; font-size: 17px;">&ensp;</div>
+            {% endif %}
+
+            <div>
+                <input type="text" id="floatingInput" placeholder=" 帳號名稱" name="username" 
+                    style="height: 50px; width: 250px; font-size: 18px;">
+            </div>
+                        
+            <div>
+                <input type="password" class="form-control" id="floatingPassword" placeholder=" 密碼" name="password"
+                    style="height: 50px; width: 250px; font-size: 18px;">
+            </div>
+
+            <button class="btn-2" type="submit" value="signin" style="margin-top: 15px;">登入</button>
+            <div style="display: inline-block;list-style-type: none;align-items: center;">
+                <a class="btn" href="{% url 'user:signup' %}">沒有帳號?註冊</a>
+                <a class="btn" href="{% url 'user:index' %}">回首頁</a>
+            </div>
+            <p>&copy; 2021–2022</p>
+
+        </form>   
+  </body>
+</html>

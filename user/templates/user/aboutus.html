@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>關於我們</title>
+    <link href="{% static 'user/main.css' %}" rel="stylesheet">
+</head>
+
+<!-- <body style="background: radial-gradient( #ffffff, #fcf2f0);"> -->
+<body > 
+    <!--    navbar-->
+    <div class="navbar">
+        <div class = "logo-animation">
+            <a href= "{% url 'user:index' %}">
+                <img src="{% static 'user/Images/orange.png' %}" width="40px" style="margin: 0px 10px;">
+            </a>
+        </div>
+        <div style="display: inline-block; margin-left: 20px;">
+            <a style="font-size: 30px;">關於我們</a>
+        </div>
+        <nav class="navbar-button">
+            <ul class="navbar-ul">
+                <li class="navbar-text"><a href="{% url 'product:index_no_season' %}">&ensp;&ensp;所有商品&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:shoppingcart' %}">&ensp;&ensp;購物車&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:order' %}">&ensp;&ensp;訂單&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:aboutus' %}">&ensp;&ensp;關於我們&ensp;&ensp;</a></li>
+                <li class="navbar-text" style="margin-right: 15px;"><a href="{% url 'user:index' %}">&ensp;&ensp;回首頁&ensp;&ensp;</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- main content -->
+    <div style="max-width: 1920px;padding-left: 0px;padding-right: 0px;display: flex;align-items: center;margin-left: auto;margin-right: auto;
+        margin-top: 80px; margin-bottom: 35px;">
+        <div style="flex-grow: 1;"></div>
+        <div class="row-1 main-image-2">
+            <div class="col-1">
+                <a style="display: inline-block; background: rgb(255, 216, 188); color: rgb(48, 48, 48); padding: 15px 40px; 
+                margin: 1px 0px; border-radius: 10px; font-size: 32px;">我們的理想</a>
+                <p style="font-size: 20px; margin-top: 15px; color: #191919; margin-bottom: 15px;">
+                    本網站成立之初以台中在地果農與優質果園合作推賣台中好山好水的優質水果。<br>
+                    採收有我們所生產的各式台灣在地梨子和架接梨等等。另外，也另有來自梨山<br>
+                    的鮮甜水蜜桃。我們嚴選無毒蔬果給客戶安心健康的食品，也通過<br>
+                    有機農場的 311項無毒檢驗和最新的8大營養指標，本初以好果農<br>
+                    種好品質為消費者把關，以最天然、新鮮、安全、健康為原則，<br>
+                    才宅配到每位消費者手中，讓每位消費者都可分享自然香甜的好滋味。
+                </p>
+                <a class="btn-1" href="{% url 'product:index_no_season' %}">去看我們的商品 &#8594;</a>
+            </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+    </div>
+
+    <div style="width: 1400px; height: 2px; background-color: #555; margin-left: auto; margin-right: auto;"></div>
+
+    <!-- main content 2 -->
+    <div class="categories">
+        <div class="row-2">
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <img width="430px" height="430px" style="margin: 70px; border-radius: 20px;" src="{% static 'user/Images/random_farmer.jpg' %}">
+            </div>
+            <div class="about-us-content-separator"></div>
+            <div class="about-us-content-title-container">
+                <div style="margin-top: 21%; margin-bottom: auto; padding-left: 25px; padding-right: 25px;">
+                    <p class="about-us-content-title">我們是來自台中的農夫 :</p>
+                    <p class="about-us-content-title">
+                        幾十年前我們看到市場上有機梨子的需求，因此
+                        我們便開始鑽研如何有機的栽培，結合幾年的心血
+                        ，只為帶給你便宜實惠的健康選擇。</p>
+                    </p>
+                </div>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+
+    <div style="width: 1400px; height: 2px; background-color: #555; margin-left: auto; margin-right: auto;"></div>
+
+    <!-- main content 3 -->
+    <div class="categories">
+        <div class="row-2">
+            <div style="flex-grow: 1;"></div>            
+            <div class="about-us-content-title-container">
+                <div style="margin-top: 16%; margin-bottom: auto; padding-left: 25px; padding-right: 25px;">
+                    <p class="about-us-content-title" style="text-align: left;">我們的聯絡方式 :</p>
+                    <p class="about-us-content-title" style="text-align: left;;">電話: 09XX-XXX-XXX</p>
+                    <p class="about-us-content-title" style="text-align: left;">傳真: 0800-XXXX-XXXX</p>
+                    <p class="about-us-content-title" style="text-align: left;">Email: 123456@example.com</p>
+                    <p class="about-us-content-title" style="text-align: left;">地址: XX市XX區XX路X段XX號</p>
+                    </p>
+                </div>
+            </div>
+            <div class="about-us-content-separator"></div>
+            <div>
+                <img width="440px" height="445px" style="margin: 10px; border-radius: 20px;" src="{% static 'user/Images/Me.jpg' %}">
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+
+    <div style="width: 1400px; height: 2px; background-color: #555; margin-left: auto; margin-right: auto; margin-bottom: 100px;"></div>
+    
+    <!--    footer-->
+    <div class="footer-logo">
+        <div class="social-media">
+            <div style="flex-grow: 1;"></div>
+            <div class="col-3">
+                <a href="">
+                    <img src="{% static 'user/images/instagram.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="width: 195px"></div>
+            <div>
+                <a href="">
+                    <img src="{% static 'user/images/facebook.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="width: 195px"></div>
+            <div>
+                <a href="">
+                    <img src="{% static 'user/images/Twitter.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+
+        <div class="footer-content">
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">關於我們</a>
+                <p class="footer-content-text">關於我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">關於我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">聯絡我們</a>
+                <p class="footer-content-text">聯絡我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">聯絡我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">贊助我們</a>
+                <p class="footer-content-text">贊助我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">贊助我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+</body>
+
+</html>

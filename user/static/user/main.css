@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-text{
+    font-size: 100%;
+    transition:  font-size 300ms;
+}
+.navbar-text:hover:not(.active){
+    font-size: 110%;
+    transition:  font-size 300ms;
+}
+
+li{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background-color 300ms;
+}
+
+li:hover:not(.active){
+    background-color: rgba(143, 143, 143, 0.3);
+    border-radius: 10px;
+    color: white;
+    transition: background-color 300ms;
+}
+
+.btn-1:hover:not(.active){
+    display: inline-block;
+    background: #FF8332;
+    color: white;
+    padding: 18px;
+    margin: 15px 0px;
+    border-radius: 25px;
+    transition: padding 300ms;
+}
+.btn-1{
+    display: inline-block;
+    background: #FF8332;
+    color: white;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 25px;
+    transition: padding 300ms;
+}
+
+.logo-animation{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    transition: background-color 300ms;
+    margin-left: 5px;
+}
+
+.logo-animation:hover:not(.active){
+    background-color: rgba(143, 143, 143, 0.3);
+    transition: background-color 300ms;
+    margin-left: 5px;
+}
+
+.season-animation{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    transition: background-color 300ms;
+    margin: 2px; 
+    text-align: center; 
+    line-height: 60px; 
+    padding-top: 10px;
+}
+
+.season-animation:hover:not(.active){
+    background-color: rgba(143, 143, 143, 0.3);
+    transition: background-color 300ms;
+    margin: 2px; 
+    text-align: center; 
+    line-height: 60px;  
+    padding-top: 10px;
+}
+
+.product-season{
+    font-size: 30px;
+    color: rgb(77, 77, 77);
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: font-size 300ms;
+}
+
+.product-season:hover:not(.active){
+    font-size: 35px;
+    color: rgb(77, 77, 77);
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: font-size 300ms;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: #FF8332;
+}
+.navbar-button{
+    flex: 1;
+    text-align: right;
+}
+.navbar-ul{
+    display: inline-block;
+    list-style-type: none;
+    align-items: center;
+}
+.navbar-text{
+    display: inline-block;
+    margin: 0px 0px;
+    color: white;
+    line-height: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui;
+}
+p{
+    color: #555;
+    font-family: system-ui;
+}
+.header{
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.main-image{
+    background-image: 
+        url(Images/fruit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px auto;
+}
+.main-image-2{
+    background-color: rgb(255, 228, 197);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 900px;
+    margin-bottom: 50px;
+    border-radius: 60px;
+}
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-content{
+    font-size: 18px; 
+    margin-top: 15px;
+}
+.row-1{
+    max-width: 1920px;
+    height: 500px;
+}
+.col-1{
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+.btn-2{
+    display: inline-block;
+    background: #fa8f48;
+    color: white;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 25px;
+}
+.row-2{
+    max-width: 1920px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 640px;
+    background-color: #FFB98D;
+    margin: 15px;
+    border-radius: 20px;
+}
+.categories{
+    margin: 40px;
+}
+.footer-logo{
+    background-color: #555;
+}
+.social-media{
+    height: 50px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+.footer-content{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+.footer-content-title{
+    font-size: 28px; 
+    text-align: center; 
+    color: white;   
+}
+.footer-content-text{
+    font-size: 15px; 
+    margin-top: 15px; 
+    text-align: center; 
+    color: white;   
+}
+
+.about-us-content-title{
+    font-size: 34px; 
+    margin: 15px; 
+    text-align: left;
+    color: #444;
+}
+.about-us-content-separator{
+    width: 2px; 
+    height: 400px; 
+    background-color: #555; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+.about-us-content-title-container{
+    flex-grow: 0; 
+    align-items: center; 
+    text-align: center; 
+    height: 500px; 
+    width: 670px; 
+    margin: 15px; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+.box-spring{
+    background-color: rgb(249, 249, 249); 
+    width: 400px; 
+    height: 400px; 
+    align-items: center;    
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    background-image:url(Images/水蜜桃_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 450px;
+}
+.box-summer{
+    background-color: rgb(249, 249, 249); 
+    width: 400px; 
+    height: 400px; 
+    align-items: center;    
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    background-image:url(Images/新世紀梨_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 450px;
+}
+.box-fall{
+    background-color: rgb(249, 249, 249); 
+    width: 400px; 
+    height: 400px; 
+    align-items: center;    
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    background-image:url(Images/蜜梨.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 450px;
+}
+.box-winter{
+    background-color: rgb(249, 249, 249); 
+    width: 400px; 
+    height: 400px; 
+    align-items: center;    
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    background-image:url(Images/雪梨_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 450px;
+}

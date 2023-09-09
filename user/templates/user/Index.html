@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>水果網站</title>
+    <link href="{% static 'user/main.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!--    navbar-->
+    <div class="navbar">
+        <div class = "logo-animation">
+            <a href= "{% url 'user:index' %}">
+                <img src="{% static 'user/Images/orange.png' %}" width="40px" style="margin: 0px 10px;">
+            </a>
+        </div>
+        <div style="display: inline-block; margin-left: 20px;">
+            <a style="font-size: 30px;">首頁</a>
+        </div>
+        <nav class="navbar-button">
+            <ul class="navbar-ul">
+                <li class="navbar-text"><a href="{% url 'product:index_no_season' %}">&ensp;&ensp;所有商品&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:shoppingcart' %}">&ensp;&ensp;購物車&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:order' %}">&ensp;&ensp;訂單&ensp;&ensp;</a></li>
+                <li class="navbar-text"><a href="{% url 'user:aboutus' %}">&ensp;&ensp;關於我們&ensp;&ensp;</a></li>
+                <li class="navbar-text" style="margin-right: 30px;"><a href="{% url 'user:signin' %}">&ensp;&ensp;登入&ensp;&ensp;</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--    header-->
+    <div class="header">
+        <div class="row-1 main-image">
+            <div class="col-1">
+                <h1 style="color: #191919">最新鮮的在地梨子</h1>
+                <p class="header-content">
+                    本網站成立之初以台中在地果農與優質果園合作推賣台中好山好水的優質水果。<br>
+                    採收有我們所生產的各式台灣在地梨子和架接梨等等。另外，也另有來自梨山的鮮甜水蜜桃。 <br>
+                    我們嚴選無毒蔬果給客戶安心健康的食品，也通過有機農場的 311項無毒檢驗和最新的8大營養指標，<br>
+                    本初以好果農種好品質為消費者把關，以最天然、新鮮、安全、健康為原則，<br>
+                    才宅配到每位消費者手中，讓每位消費者都可分享自然香甜的好滋味。
+                </p>
+                <a class="btn-1" href="{% url 'user:aboutus' %}">了解我們 &#8594;</a>
+            </div>
+        </div>
+    </div>
+    <!--    products-->
+    <div class="categories">
+        <div class="row-2">
+            <div style="flex-grow: 1;"></div>
+            <div class="col-2">
+                <div class="season-animation">
+                    <a class="product-season" href="{% url 'product:spring' %}">春季水果</a>
+                </div>
+                <div class="box-spring"></div>
+            </div>
+            <div style="width: 100px;"></div>
+            <div class="col-2">
+                <div class="season-animation">
+                    <a class="product-season" href="{% url 'product:summer' %}">夏季水果</a>
+                </div>
+                <div class="box-summer"></div>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="row-2">
+            <div style="flex-grow: 1;"></div>
+            <div class="col-2">
+                <div class="season-animation">
+                    <a class="product-season" href="{% url 'product:fall' %}">秋季水果</a>
+                </div>
+                <div class="box-fall"></div>
+            </div>  
+            <div style="width: 100px;"></div>
+            <div class="col-2">
+                <div class="season-animation">
+                    <a class="product-season" href="{% url 'product:winter' %}">冬季水果</a>
+                </div>
+                <div class="box-winter"></div>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+    <!--    footer-->
+    <div class="footer-logo">
+        <div class="social-media">
+            <div style="flex-grow: 1;"></div>
+            <div class="col-3">
+                <a href="">
+                    <img src="{% static 'user/images/instagram.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="width: 195px"></div>
+            <div>
+                <a href="">
+                    <img src="{% static 'user/images/facebook.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="width: 195px"></div>
+            <div>
+                <a href="">
+                    <img src="{% static 'user/images/Twitter.svg' %}" height="30px" width="30px" style="margin-top: 20px;">
+                </a>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+
+        <div class="footer-content">
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">關於我們</a>
+                <p class="footer-content-text">關於我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">關於我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">聯絡我們</a>
+                <p class="footer-content-text">聯絡我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">聯絡我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+            <div>
+                <a href="" class="footer-content-title">贊助我們</a>
+                <p class="footer-content-text">贊助我們</p>
+                <p class="footer-content-text" style="margin-bottom: 15px;">贊助我們</p>
+            </div>
+            <div style="flex-grow: 1;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
