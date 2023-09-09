@@ -1,6 +1,6 @@
 # fruit_selling_website
 
-This is a personal project that creates a shopping website for Mr. Wang, a client of mine who is a fruit farmer. <br>
+This is a high school personal project that creates a shopping website for Mr. Wang, a client of mine who is a fruit farmer. <br>
 It uses Django as the server framework to create an interactive site with a shopping cart and user login/logout function.
 The SQLite database is connected to the web app, therefore, Mr. Wang can update all the info however he wants.
 <br>
